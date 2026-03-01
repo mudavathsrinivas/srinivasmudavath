@@ -21,7 +21,7 @@
       {% endif %}
 
       {% if entry.date %}
-        ({{ entry.date | split: '-' | slice: 0, 1 | join: '' }})
+        ({{ entry.date | default: '' | split: '-' | slice: 0, 1 | join: '' }})
       {% endif %}
     </li>
   {% endfor %}
