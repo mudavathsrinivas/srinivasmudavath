@@ -80,7 +80,8 @@
   <!-- Schema.org -->
   {% comment %} Social links generator for "sameAs schema" {% endcomment %}
   {% assign sameaslinks = '' | split: ',' %}
-  {% for social in site.data.socials %}
+  {% if site.data.socials %}
+    {% for social in site.data.socials %}
     {% case social[0] %}
       {% when 'acm_id' %}
         {% capture link %}https://dl.acm.org/profile/{{ social[1] }}/{% endcapture %}
@@ -225,6 +226,7 @@
         {% assign sameaslinks = sameaslinks | push: social[1].url %}
     {% endcase %}
   {% endfor %}
+  {% endif %}
 
   <script type="application/ld+json">
     {
