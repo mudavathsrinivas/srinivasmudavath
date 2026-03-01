@@ -277,7 +277,8 @@ layout: default
         {% endif %}
 
         <!-- Education -->
-        {% if site.data.resume.education.size > 0 %}
+        {% assign empty_array = '' | split: ',' %}
+        {% if site.data.resume.education | default: empty_array | size > 0 %}
           <a class="anchor" id="education"></a>
           <div class="card mt-3 p-3">
             <h3 class="card-title font-weight-medium">Education</h3>
@@ -289,7 +290,7 @@ layout: default
         {% endif %}
 
         <!-- Awards -->
-        {% if site.data.resume.awards.size > 0 %}
+        {% if site.data.resume.awards | default: empty_array | size > 0 %}
           <a class="anchor" id="awards"></a>
           <div class="card mt-3 p-3">
             <h3 class="card-title font-weight-medium">Awards</h3>
@@ -301,7 +302,7 @@ layout: default
         {% endif %}
 
         <!-- Publications -->
-        {% if site.data.resume.publications.size > 0 %}
+        {% if site.data.resume.publications | default: empty_array | size > 0 %}
           <a class="anchor" id="publications"></a>
           <div class="card mt-3 p-3">
             <h3 class="card-title font-weight-medium">Publications</h3>
@@ -313,7 +314,7 @@ layout: default
         {% endif %}
 
         <!-- Skills -->
-        {% if site.data.resume.skills.size > 0 %}
+        {% if site.data.resume.skills | default: empty_array | size > 0 %}
           <a class="anchor" id="skills"></a>
           <div class="card mt-3 p-3">
             <h3 class="card-title font-weight-medium">Skills</h3>
@@ -325,7 +326,7 @@ layout: default
         {% endif %}
 
         <!-- Languages -->
-        {% if site.data.resume.languages.size > 0 %}
+        {% if site.data.resume.languages | default: empty_array | size > 0 %}
           <a class="anchor" id="languages"></a>
           <div class="card mt-3 p-3">
             <h3 class="card-title font-weight-medium">Languages</h3>
@@ -337,7 +338,7 @@ layout: default
         {% endif %}
 
         <!-- Interests -->
-        {% if site.data.resume.interests.size > 0 %}
+        {% if site.data.resume.interests | default: empty_array | size > 0 %}
           <a class="anchor" id="interests"></a>
           <div class="card mt-3 p-3">
             <h3 class="card-title font-weight-medium">Interests</h3>
@@ -349,7 +350,7 @@ layout: default
         {% endif %}
 
         <!-- Certificates -->
-        {% if site.data.resume.certificates.size > 0 %}
+        {% if site.data.resume.certificates | default: empty_array | size > 0 %}
           <a class="anchor" id="certificates"></a>
           <div class="card mt-3 p-3">
             <h3 class="card-title font-weight-medium">Certificates</h3>
@@ -361,7 +362,7 @@ layout: default
         {% endif %}
 
         <!-- Projects -->
-        {% if site.data.resume.projects.size > 0 %}
+        {% if site.data.resume.projects | default: empty_array | size > 0 %}
           <a class="anchor" id="projects"></a>
           <div class="card mt-3 p-3">
             <h3 class="card-title font-weight-medium">Projects</h3>
@@ -373,7 +374,7 @@ layout: default
         {% endif %}
 
         <!-- References -->
-        {% if site.data.resume.references.size > 0 %}
+        {% if site.data.resume.references | default: empty_array | size > 0 %}
           <a class="anchor" id="references"></a>
           <div class="card mt-3 p-3">
             <h3 class="card-title font-weight-medium">References</h3>
