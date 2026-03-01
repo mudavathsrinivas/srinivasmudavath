@@ -129,7 +129,7 @@ layout: default
           </figcaption>
         {% endif %}
       </figure>
-      {% assign status = page.status | upcase %}
+      {% assign status = page.status | default: '' | upcase %}
       <div class="clearfix">
         <h4>{{ status }}</h4>
       </div>
