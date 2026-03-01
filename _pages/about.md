@@ -2,18 +2,18 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Principal Software Engineer | Engineering Leader | 12+ Years in Enterprise Architecture
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>📍 Dallas, TX (US)</p>
+    <p>☎️ (630) 306-8825</p>
+    <p>✉️ hello@srinivasmudavath.com</p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
 announcements:
@@ -27,8 +27,40 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+## Welcome!
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I'm a **Principal Software Engineer and Engineering Leader** with **12+ years** of experience architecting enterprise-scale distributed systems serving **100M+ users**. I combine deep hands-on technical expertise with strategic leadership in building and scaling high-performing engineering teams.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+### What I Do
+
+🏗️ **Enterprise Architecture** – Design cloud-native microservices and micro-frontend architectures on AWS, Azure, and GCP supporting 99.9% SLA and multi-tenant deployments.
+
+🤖 **AI/ML Integration** – Architect and deploy production LLM orchestration systems, RAG pipelines, and AI agents using GPT, Gemini, Claude, and HuggingFace transformers.
+
+👥 **Engineering Leadership** – Built and scaled teams from 4 to 12+ engineers. Hired 15+ engineers with 95% retention. Mentored junior engineers to senior roles.
+
+💰 **Business Impact** – Delivered **$2.5M+ annual cost savings** through architectural optimization and technical due diligence. Managed **$1.5M+** annual technology budgets.
+
+### Core Expertise
+
+**Frontend & Mobile:** React, TypeScript, Next.js, React Native, Micro-frontends (Webpack Module Federation)
+
+**Backend & APIs:** Java, Node.js, Spring Boot, GraphQL, REST APIs, Microservices patterns
+
+**Cloud & DevOps:** AWS (EKS, Lambda), Azure (AKS, Functions), GCP, Kubernetes, Docker, Terraform, CI/CD
+
+**AI/ML & LLM:** LLM Orchestration, RAG Architecture, Vector Databases, NLU/NLP, AI Agents
+
+**Data & Search:** PostgreSQL, MongoDB, Redis, Lucidworks Fusion, Snowflake
+
+### Highlights
+
+🏆 **Awards:** Make IT Happen (2018, 2019) • Super Hero Award • Sustaining Edge Award
+
+📊 **Metrics Driven:** 4x deployment frequency • 25% MTTR reduction • 95% on-time delivery • NPS improvement of +15 points
+
+🎓 **Education:** B.Tech Computer Science, JNTUH
+
+---
+
+Explore my [CV](/cv/), [projects](/projects/), and [blog](/blog/) to learn more about my work and interests.

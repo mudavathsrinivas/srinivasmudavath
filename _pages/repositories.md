@@ -1,15 +1,24 @@
 ---
 layout: page
 permalink: /repositories/
-title: repositories
-description: Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories.
+title: repositories & code
+description: Open-source projects, code samples, and GitHub contributions showcasing architecture, frameworks, and tools.
 nav: true
 nav_order: 4
 ---
 
-{% if site.data.repositories.github_users %}
+A collection of my GitHub repositories, including open-source projects, code samples, and architectural frameworks.
 
-## GitHub users
+## GitHub Profile
+
+Explore my repositories on GitHub showcasing:
+- Open-source frameworks and libraries
+- Reference implementations for architectural patterns
+- Developer tools and utilities
+- Learning resources and tutorials
+- Internal platform engineering components
+
+{% if site.data.repositories.github_users %}
 
 <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
   {% for user in site.data.repositories.github_users %}
@@ -19,15 +28,33 @@ nav_order: 4
 
 ---
 
+## Featured Projects
+
+Check out some of my highlighted repositories showcasing modern development practices:
+
+- **Microservices Frameworks** – Production-ready service templates and utilities
+- **React Component Libraries** – Reusable UI components and hooks  
+- **Cloud Infrastructure** – Terraform modules and Kubernetes operators
+- **Developer Tools** – CLI utilities and automation scripts
+- **Educational Content** – Tutorials and sample implementations
+
 {% if site.repo_trophies.enabled %}
 {% for user in site.data.repositories.github_users %}
 {% if site.data.repositories.github_users.size > 1 %}
 
-  <h4>{{ user }}</h4>
+<h4>{{ user }}</h4>
   {% endif %}
   <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
   {% include repository/repo_trophies.liquid username=user %}
   </div>
+{% endfor %}
+{% endif %}
+
+---
+
+## Repository Statistics
+
+Check out my GitHub profile for detailed statistics, contribution graphs, and pinned repositories highlighting key projects.
 
 ---
 
